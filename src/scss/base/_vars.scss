@@ -1,0 +1,42 @@
+//fonts
+$google-font:'https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Quicksand&family=Ubuntu:wght@300;400;500;700&display=swap';
+$prefix: prefix- !default;
+$baseFontSize: 16px;
+$nunitoFontFamily: 'Nunito', sans-serif;
+$ubuntuFontFamily: "Ubuntu", sans-serif;
+$quicksandFontFamily: 'Quicksand', sans-serif;
+$lightFontWeight: 300;
+$regularFontWeight: 400;
+$mediumFontWeight: 500;
+$boldFontWeight: 700;
+$extraBoldFontWeight: 800;
+
+
+$mobilePadding: (12px / $baseFontSize) * 1rem;
+$desktopPadding: 1rem;
+
+// Paths
+
+$imagesPath: "../i/";
+// $fontsPath: "../fonts/";
+// $usersFilesPath: "../userfiles/";
+
+// Colors
+$darkWhite:#F5F7FA !default;
+$lightDark:#222222 !default;
+$lightGrey:#DDDDDD !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$beige:#FFEAA2 !default;
+$darkGrey:#333333 !default;
+$purple: #7828E6 !default;
+$orange: #E63A28 !default;
+
+$colors: (
+  "black": $black,
+  "white": $white,
+  "darkGrey":$darkGrey,
+  "purple": $purple,
+  "orange": $orange,
+  "beige":$beige,
+) !default;

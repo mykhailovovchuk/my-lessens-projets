@@ -1,0 +1,193 @@
+.header-search768{
+    display: none;
+}
+.navigation768{
+    display: none;
+}
+.navigation-list768{
+    display: none;
+}
+.getting-email000{
+    display: none;
+}
+.header-search992__header{
+  display: block;
+}
+.header-search992__search{
+  display: block;
+}
+.getting-email992{
+  display: block;
+}
+.navigation992{
+  display: block;
+}
+.navigation-list{
+  @include e(item){
+    @include m(fourth){
+      text-decoration:none;
+      &::before{
+        background: none;
+        display: none;
+      }
+    }
+  }
+}
+// header start 
+.header-search992{
+  @include e(header){
+    margin: 0;
+    margin-top: 20px;
+    font-family:$ubuntuFontFamily;
+    font-weight: $boldFontWeight;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    color: #333333;
+  }
+  @include e(search){
+    margin: 20px 0;
+    border: 1px solid $lightGrey; 
+    border-radius: 27px;
+    min-width: 100%;
+    flex-grow: 0;
+    padding: 1.3rem 4rem 1.3rem 1rem;
+    position: relative;
+  }
+      
+  @include e(submit){
+    background: url(#{$imagesPath}svg/search.svg) no-repeat;
+    position: absolute;
+    top: 31%;
+    left: 85%;    
+    width: 26px; 
+    height: 23px; 
+  }
+  @include e(field){
+    min-width: 87%;
+    margin-left: 1.5rem;
+    font-family: $ubuntuFontFamily;
+    font-weight: $regularFontWeight;
+    font-size: $baseFontSize;
+    letter-spacing: -0.025em;
+  }
+}
+.navigation-list992{
+  display: block;
+  .navigation-list{
+    @include e(item){
+      display: inline-block;
+      margin-right:33px ;
+      color:$black;
+      text-decoration: none;
+      font-family:$ubuntuFontFamily;
+      font-weight:$regularFontWeight;
+      font-size: $baseFontSize;
+      line-height: 18px;
+      letter-spacing: -0.025em;
+      color: $lightDark;
+      &:last-of-type{
+        text-decoration: underline;
+        &::before{
+          content: "";
+          background: url(../../../i/svg/icon.svg) no-repeat;
+          min-width: 20px;
+          min-height: 14px;
+          display:inline-block;
+          vertical-align: -1px;
+          margin-right: 3px;
+        }
+      }
+    }
+  }
+}
+// header end
+// page start 
+.banner{  
+  @include e(header){
+    font-family: $ubuntuFontFamily;
+    font-weight: $boldFontWeight;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.025em;
+    color: $black;
+  }
+  @include e(img){
+    width: 260px;
+    padding-top: 19px;
+    padding-bottom: 33px;
+  }
+}
+.page{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  margin: auto;
+}
+.column-left {
+  display: flex;
+  flex-direction: column;
+}
+.column-right{
+  max-width: 100%;
+  padding: 10px 0px;
+  margin-right: 40px;
+  max-width: 760px;
+}
+.getting-email992{ 
+  margin-top: 30px;
+  background-color: $purple;
+  padding: 10px 30px 28px 30px;
+  text-align: center;
+  border-radius: 10px;
+  @include e(header){
+    font-family: $ubuntuFontFamily;
+    font-weight: $regularFontWeight;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.025em;
+    color: $white;
+    margin:0;
+  }
+  @include e(paragraph){
+    font-family: $ubuntuFontFamily;
+    font-weight: $regularFontWeight;
+    font-size: $baseFontSize;
+    line-height: 26px;
+    letter-spacing: -0.025em;
+    color: $white;
+    margin-bottom:40px;
+  }
+  @include e(input){
+    background-color: $white;
+    padding: 1.3rem 1rem 1.3rem 1rem;
+    min-width: 100%;
+    text-align: center;
+    font-family: $ubuntuFontFamily;
+    font-weight: $regularFontWeight;
+    font-size: $baseFontSize;
+    line-height: 18px;
+    letter-spacing: -0.025em;
+    border-radius:27px;
+    color: #9D9D9D;
+    margin-bottom: 10px;
+  }
+  @include e(button){
+    margin-top: 10px;
+    font-family: $ubuntuFontFamily;
+    font-weight: $regularFontWeight;
+    font-size: $baseFontSize;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.025em;
+    background-color: $orange;
+    color: $white;
+    padding: 1.3rem 1rem 1.3rem 1rem;
+    min-width: 100%;
+    border-radius:27px;
+    text-transform: uppercase;
+  }
+}
+.selectors{
+  text-align: center;
+}

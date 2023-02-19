@@ -1,71 +1,196 @@
 <!DOCTYPE html>
-<html class="index-box">
+<html>
   <head>
-    <title>Tables</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <style>
-      .index-box * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .index-box body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .index-box .container-index {
-        max-width: 80%;
-        margin: auto;
-      }
-      .index-box .title {
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-      .index-box .nav {
-        display: grid;
-        grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-        padding-bottom: 2rem;
-      }
-      .index-box .nav__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;
-        text-decoration: none;
-        background: #22556e;
-        padding: 1rem;
-        text-align: center;
-        font-size: 1.1rem;
-        color: #fff;
-      }
-
-      .index-box .nav__item:hover {
-        background: #4799b7;
-      }
-    </style>
+    <title>title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container-index">
-      <h1 class="title">SASS</h1>
-      <div class="nav">
-        <a class="nav__item" href="index_1.html">Index_1.html</a>
-        <a class="nav__item" href="nested.html">Nested.html</a>
-        <a class="nav__item" href="variables.html">variables.html</a>
-        <a class="nav__item" href="mixins.html">mixins.html</a>
-        <a class="nav__item" href="extended_selectors.html"
-          >extended_selectors.html</a
-        >
-        <a class="nav__item" href="functions.html">functions.html</a>
-        <a class="nav__item" href="loop.html">loop.html</a>
-        <a class="nav__item" href="each.html">each.html</a>
+<div class="container">
+  <header class="header">
+    <div class="header-logo">       
+      <svg class="header-logo__svg" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="i/svg/sprite.svg#logo"/>
+      </svg> 
+      <div class="header-logo__slogan">
+        <h1 class="header-logo__slogan  header-logo__slogan_header">Doremi</h1>
+        <span class="header-logo__slogan header-logo__slogan_slogan">Buy, Sell Or Rent</span>
       </div>
     </div>
+    <nav class="navigation-list992">
+      <a class="navigation-list__item" href="#">Explore</a>
+      <a class="navigation-list__item" href="#">About Us</a>
+      <a class="navigation-list__item" href="#">Pages</a>
+      <a class="navigation-list__item" href="#">Sign in or Register</a>
+  </nav>
+    <div class="header-search768">
+      <input class="header-search__field" type="search" name="q" placeholder="Search...">
+      <input class="header-search__submit" type="submit" value="" >
+    </div>
+    <div class="header-navigation">
+      <input class="header-navigation__burger" type="checkbox" id="burger">
+      <label class="header-navigation__icon" for="burger">
+        <svg class="header-navigation__nav" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="i/svg/sprite.svg#nav"/>
+        </svg> 
+      </label>
+      <nav class="navigation-list000">
+        <a class="navigation-list000__item" href="#">Explore</a>
+        <a class="navigation-list000__item" href="#">About Us</a>
+        <a class="navigation-list000__item" href="#">Pages</a>
+        <a class="navigation-list000__item" href="#">Sign in or Register</a>
+      </nav>
+      <div class="header-navigation__select">
+        <span class="header-navigation__language">Eng </span>
+        <img class="header-navigation__img" src="i/eng.png">
+        <svg class="header-navigation__down" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="i/svg/sprite.svg#down"/>
+        </svg> 
+      </div>
 
-    <script>
-      document
-        .querySelectorAll(".nav__item")
-        .forEach((item) => (item.target = "_blank"));
-    </script>
+
+    </div>
+    <div class="header-search">
+      <input class="header-search__field" type="search" name="q" placeholder="Search...">
+      <input class="header-search__submit" type="submit" value="" >
+    </div> 
+      <nav class="navigation-list768">
+        <a class="navigation-list__item" href="#">Explore</a>
+        <a class="navigation-list__item" href="#">About Us</a>
+        <a class="navigation-list__item" href="#">Pages</a>
+        <a class="navigation-list__item" href="#">Sign in or Register</a>
+      </nav>
+    </div>
+    <div class="banner">
+      <img class="banner__img" src="i/banner.png">
+      <span class="banner__header">Help Ukraine with the Beetroot Tech Relief Fund</span>
+    </div>  
+    <div class="page"> 
+      <article class="column-right">
+        <div class="column-right__background">
+          <div class="column-right__img">
+            <img class="column-right__photo" src="i/mediumPost.png">
+            <div class="column-right__databox">
+              <span class="column-right__databox column-right__databox_data">26</span>
+              <span class="column-right__databox column-right__databox_mounth">sep</span>
+            </div>
+          </div>
+          <div class="column-right__contnent">
+            <h2 class="column-right__contnent column-right__contnent_header" >How To Buy, Sell or Rent Items From Doremi</h2>
+            <div class="column-right__navigation"> 
+              <a class="column-right__link" href="#">Admin</a>
+              <a class="column-right__link column-right__link_second" href="#">Rent Buy Sell</a>
+              <a class="column-right__link" href="#">56 Comments</a>
+            </div> 
+              <p class="column-right__contnent column-right__contnent_paragraph">Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems ipsum dolor
+              amet consecteur eiusmod tempor incididunt ut labore et dolor magna minim venia
+              quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <input class="column-right__contnent column-right__contnent_button1" type="button" onclick="window.location.href = '#'" value="read more"/>
+            </div>
+            <img class="column-right__photo" src="i/mediumPost.png">
+            <div class="column-right__img">
+              <div class="column-right__databox">
+                <span class="column-right__databox column-right__databox_data">26</span>
+                <span class="column-right__databox column-right__databox_mounth">sep</span>
+              </div>
+            </div>
+            <div class="column-right__contnent">
+              <h2 class="column-right__contnent column-right__contnent_header" >How To Buy, Sell or Rent Items From Doremi</h2>
+              <div class="column-right__navigation"> 
+                <a class="column-right__link" href="#">Admin</a>
+                <a class="column-right__link column-right__link_second" href="#">Rent Buy Sell</a>
+                <a class="column-right__link" href="#">56 Comments</a>
+              </div> 
+              <div class="column-right__contnent column-right__contnent_nav"> для больших страниц
+                <ul class="navigation-line">
+                  <li class="navigation-line__item">Admin</li>
+                  <li class="navigation-line__item">Rent Buy Sell</li>
+                  <li class="navigation-line__item">56 Comments</li>
+                </ul>
+              </div> 
+              <p class="column-right__contnent column-right__contnent_paragraph">Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems ipsum dolor
+              amet consecteur eiusmod tempor incididunt ut labore et dolor magna minim venia
+              quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              <input class="column-right__contnent column-right__contnent_button2" type="button" onclick="window.location.href = '#'" value="read more"/>
+            </div>
+          </div>  
+          <div class="selectors">
+            <a class="selectors__pages" href="#">1</a>
+            <a class="selectors__pages" href="#">2</a>
+            <a class="selectors__pages" href="#">3</a>
+            <a class="selectors__pages" href="#">></a>
+          </div>
+      </article>
+      <article class="column-left">
+        <h2 class="header-search992__header">Search Bog</h2> 
+        <div class="header-search992__search">
+          <input class="header-search992__field" type="search" name="q" placeholder="Search...">
+          <input class="header-search992__submit" type="submit" value="" >
+        </div> 
+        <div class="blog-box">
+          <h3 class="blog-box__header">Blog Categories</h3>
+          <ul class="blog-box__list">
+            <li class="blog-box__list blog-box__list_item">•<a class="blog-box__list blog-box__list_link" href="#">Buying Items</a>(87)</li>
+            <li class="blog-box__list blog-box__list_item_hover">•<a class="blog-box__list blog-box__list_link_hover" href="#">Selling Items</a>(12)</li>
+            <li class="blog-box__list blog-box__list_item">•<a class="blog-box__list blog-box__list_link" href="#">Renting Items</a>(34)</li>
+            <li class="blog-box__list blog-box__list_item">•<a class="blog-box__list blog-box__list_link" href="#">Promote Business</a>(9)</li>
+            <li class="blog-box__list blog-box__list_item">•<a class="blog-box__list blog-box__list_link" href="#">Worldwide Cities</a>(50)</li>
+          </ul>
+        </div>
+        <div class="getting-email992">
+          <img class="getting-email992__img" src="i/messege.png">
+          <div class="getting-email992__contnent">
+            <h3 class="getting-email992__header" >Join Us & Get Listed</h3>
+            <p class="getting-email992__paragraph">Eiusmod tempor incididunt ut labore <br> exercitation ullamco laboris.</p>
+            <input class="getting-email992__input" type="email" name="q" placeholder="Enter your email"/> <br>
+            <input class="getting-email992__button" type="button" value="subscribe"/>
+          </div>
+        </div>
+        <article class="articles">
+          <h3 class="articles__header">Our Top Articles</h3>
+          <div class="article-container">
+            <div class="article-container__content">
+              <div class="article-container__graybox"></div>
+              <div class="article-container__box">
+                <p class="article-container__paragraph">How to spend up free <br>vacations</p>
+                <a href="#" class="article-container__link">Cars, Bikes & Trucks</a>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-container__content">
+              <div class="article-container__graybox"></div>
+              <div class="article-container__box">
+                <p class="article-container__paragraph">Welcome to <br>quarantine free travel</p>
+                <a href="#" class="article-container__link">Drones, Cameras</a>
+              </div>
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-container__content">
+              <div class="article-container__graybox"></div>
+              <div class="article-container__box">
+                <p class="article-container__paragraph">10 most beautiful <br>cities for traveling</p>
+                <a href="#" class="article-container__link">Electronic Items</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </article>
+      </div> 
+      <div class="getting-email000">
+        <img class="getting-email000__img" src="i/messege.png">
+        <div class="getting-email000__contnent">
+          <h3 class="getting-email000__header" >Join Us & Get Listed</h3>
+          <p class="getting-email000__paragraph">Eiusmod tempor incididunt ut labore <br> exercitation ullamco laboris.</p>
+          <input class="getting-email000__input" type="email" name="q" placeholder="Enter your email"/> <br>
+          <input class="getting-email000__button" type="button" value="subscribe"/>
+        </div>
+      </div> 
+      <!--  JavaScript here -->
+      <!-- <script src="js/app.js"></script> -->
+      <!-- <script src="js/script.js"></script>-->
   </body>
-</html>
+  </html>
